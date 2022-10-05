@@ -1,6 +1,10 @@
 {
   "name": "mdev1012-f2022-week5b",
   "version": "0.1.0",
+  "description": "Demo App for MDEV1012 Portfolio Site",
+  "repository": "https://github.com/GeorgianCollege/MDEV1012-F2022-Week5b.git",
+  "author": "Tom Tsiliopoulos <tsiliopoulos@hotmail.com>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
