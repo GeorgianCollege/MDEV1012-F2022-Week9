@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import User from '../models/User';
 
 function Home(props: User)
 {
+    useEffect(()=>{
+        document.title = "Home";
+    }, []);
+
     return(
         <div>
             <h1 className="mb-5">Welcome to our Site, {props.displayName}</h1>

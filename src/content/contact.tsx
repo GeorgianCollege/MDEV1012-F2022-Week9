@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useEffect, useState } from 'react';
 
 function Contact()
 {
@@ -7,28 +7,28 @@ function Contact()
     const [emailAddress, setEmailAddress] = useState("");
     const [message, setMessage] = useState("");
 
+    useEffect(()=>{
+        document.title = "Contact Us";
+    }, []);
+
     function onChangeFullName(e: ChangeEvent<HTMLInputElement>)
     {
         setFullName(e.target.value);
-        console.log(fullName);
     }
 
     function onChangeContactNumber(e: ChangeEvent<HTMLInputElement>)
     {
         setContactNumber(e.target.value);
-        console.log(contactNumber);
     }
 
     function onChangeEmailAddress(e: ChangeEvent<HTMLInputElement>)
     {
         setEmailAddress(e.target.value);
-        console.log(emailAddress);
     }
 
     function onChangeMessage(e: ChangeEvent<HTMLTextAreaElement>)
     {
         setMessage(e.target.value);
-        console.log(message);
     }
 
     function onContactFormSubmit(e: any)
