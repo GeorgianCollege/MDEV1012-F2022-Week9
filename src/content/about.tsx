@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 function About()
 {
     useEffect(()=>{
-        document.title = "Home";
+        document.title = "About Us";
     }, []);
     return(
         <div>
