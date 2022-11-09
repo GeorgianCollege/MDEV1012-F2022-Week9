@@ -29,8 +29,8 @@ function App() {
         {/* Client-Side Routing */}
         <div className='container'>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home username='admin' displayName='Admin' />} />
+            <Route path="/home" element={<Home username='admin' displayName='Admin' />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/apps" element={<Apps />} />
