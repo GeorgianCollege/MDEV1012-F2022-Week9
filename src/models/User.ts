@@ -1,4 +1,4 @@
-class User
+/* class User
 {
     // private instance members
     public username: string;
@@ -18,6 +18,12 @@ class User
     {
         return `username: ${this.username}\ndisplayName: ${this.displayName}`;
     }
+} */
+
+interface User
+{
+    username: string;
+    displayName: string;
 }
 
 export default User;
