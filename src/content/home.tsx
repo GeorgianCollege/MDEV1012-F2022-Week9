@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Home(props: {username: string, displayName: string})
+import User from '../models/User';
+
+function Home(props: User)
 {
     return(
         <div>
